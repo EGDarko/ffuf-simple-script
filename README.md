@@ -1,3 +1,4 @@
+Here's a `README.md` file you can use for your GitHub repository that includes this FFUF Bash script:
 
 ---
 
@@ -6,7 +7,7 @@
 
 A simple interactive Bash script to automate common fuzzing tasks using [ffuf](https://github.com/ffuf/ffuf).
 
-Created with ❤️ by **EGDarko**
+Created with ❤️ by **Mazen Medhat**
 
 ---
 
@@ -106,6 +107,10 @@ This project is licensed under the MIT License.
 ## 🙌 Credits
 
 - [ffuf](https://github.com/ffuf/ffuf) by **@ffuf**
-- Script by **EGDarko**
+- Script by **Mazen Medhat**
 
-``
+```
+
+---
+
+Let me know if you want a version with GitHub badges, contributors section, or sample screenshots.
