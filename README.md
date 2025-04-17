@@ -33,7 +33,7 @@ Just run the script, input your target URL, wordlist path, and number of threads
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/yourusername/ffuf-bash-script.git
+   git clone https://github.com/EGDarko/ffuf-simple-script.git
    cd ffuf-bash-script
    ```
 
