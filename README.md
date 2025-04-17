@@ -1,13 +1,8 @@
-Here's a `README.md` file you can use for your GitHub repository that includes this FFUF Bash script:
-
----
-
-```markdown
 # 🔍 FFUF Automation Script
 
 A simple interactive Bash script to automate common fuzzing tasks using [ffuf](https://github.com/ffuf/ffuf).
 
-Created with ❤️ by **Mazen Medhat**
+Created with ❤️ by **EGDarko**
 
 ---
 
@@ -67,7 +62,7 @@ Just run the script, input your target URL, wordlist path, and number of threads
 
 ```text
 ========= FFUF Script =========
-        By: Mazen Medhat
+        By: EGDarko
 
 Enter URL with FUZZ in the place you want to inject payload:
   For DIR fuzzing     => Example: http://example.com/FUZZ
@@ -107,10 +102,4 @@ This project is licensed under the MIT License.
 ## 🙌 Credits
 
 - [ffuf](https://github.com/ffuf/ffuf) by **@ffuf**
-- Script by **Mazen Medhat**
-
-```
-
----
-
-Let me know if you want a version with GitHub badges, contributors section, or sample screenshots.
+- Script by **EGDarko**
