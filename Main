@@ -1,0 +1,60 @@
+#!/bin/bash
+
+# Colors
+RED="\e[31m"
+GREEN="\e[32m"
+YELLOW="\e[33m"
+BLUE="\e[34m"
+MAGENTA="\e[35m"
+CYAN="\e[36m"
+RESET="\e[0m"
+
+# Title
+echo -e "${MAGENTA}========= FFUF Script =========${RESET}"
+echo -e "${CYAN}        By: EGDarko${RESET}\n"
+
+# URL instructions
+echo -e "${YELLOW}Enter URL with FUZZ in the place you want to inject payload:${RESET}"
+echo -e "  For DIR fuzzing     => Example: ${GREEN}http://example.com/FUZZ${RESET}"
+echo -e "  For Subdomain fuzzing => Example: ${GREEN}example.com${RESET}"
+echo -e "  For Extension fuzzing => Example: ${GREEN}https://example.com/index.FUZZ${RESET}\n"
+read -p "$(echo -e ${CYAN}URL:${RESET} ) " URL
+
+# Wordlist
+read -p "$(echo -e ${CYAN}Enter Wordlist path:${RESET} ) " wordlist
+
+# Threads
+read -p "$(echo -e ${CYAN}Enter number of threads:${RESET} ) " threads
+
+# Menu
+echo -e "\n${YELLOW}Select a template:${RESET}"
+echo -e "${GREEN}1)${RESET} Basic directory fuzzing"
+echo -e "${GREEN}2)${RESET} Subdomain fuzzing"
+echo -e "${GREEN}3)${RESET} File extension fuzzing (.php)"
+echo -e "${GREEN}4)${RESET} Extension fuzzing ${RED}[Use extensions wordlist like: php,html,js]${RESET}"
+echo -e "${GREEN}5)${RESET} Directory fuzzing with -recursion"
+
+read -p "Enter your choice (1-5):" TEMP
+
+# Run based on selected template
+case $TEMP in
+  1)
+    ffuf -u "$URL" -w "$wordlist" -t "$threads"
+    ;;
+  2)
+    ffuf -u "https://FUZZ.$URL" -w "$wordlist" -t "$threads"
+    ;;
+  3)
+    ffuf -u "$URL" -w "$wordlist" -e .php -t "$threads"
+    ;;
+  4)
+    ffuf -u "$URL" -w "$wordlist" -t "$threads"
+    ;;
+  5)
+    ffuf -u "$URL" -w "$wordlist" -recursion -t "$threads"
+    ;;
+  *)
+    echo -e "${RED}Invalid Input. Exiting.${RESET}"
+    exit 1
+    ;;
+esac
