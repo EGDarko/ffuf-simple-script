@@ -108,6 +108,4 @@ This project is licensed under the MIT License.
 - [ffuf](https://github.com/ffuf/ffuf) by **@ffuf**
 - Script by **EGDarko**
 
-```
-
----
+``
