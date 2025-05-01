@@ -25,7 +25,7 @@ Just run the script, input your target URL, wordlist path, and number of threads
 - **Linux or macOS terminal**
 - [ffuf](https://github.com/ffuf/ffuf) must be installed and available in your `$PATH`
 - A valid **wordlist** for fuzzing (e.g., from [SecLists](https://github.com/danielmiessler/SecLists))
-
+- Install `GIT` if not installed
 ---
 
 ## 🚀 Usage
