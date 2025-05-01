@@ -34,19 +34,19 @@ Just run the script, input your target URL, wordlist path, and number of threads
 
    ```bash
    git clone https://github.com/EGDarko/ffuf-simple-script.git
-   cd ffuf-bash-script
+   cd ffuf-simple-script
    ```
 
 2. Make the script executable:
 
    ```bash
-   chmod +x ffuf-script.sh
+   chmod +x Main
    ```
 
 3. Run the script:
 
    ```bash
-   ./ffuf-script.sh
+   ./Main
    ```
 
 4. Follow the prompts:
