@@ -2,7 +2,7 @@
 
 A simple interactive Bash script to automate common fuzzing tasks using [ffuf](https://github.com/ffuf/ffuf).
 
-Created with ❤️ by **EGDarko**
+Created with ❤️ by **EGDarko (Mazen Medhat)**
 
 ---
 
