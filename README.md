@@ -62,7 +62,7 @@ Just run the script, input your target URL, wordlist path, and number of threads
 
 ```text
 ========= FFUF Script =========
-        By: EGDarko
+        By: Mazen Medhat
 
 Enter URL with FUZZ in the place you want to inject payload:
   For DIR fuzzing     => Example: http://example.com/FUZZ
