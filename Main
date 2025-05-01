@@ -11,7 +11,7 @@ RESET="\e[0m"
 
 # Title
 echo -e "${MAGENTA}========= FFUF Script =========${RESET}"
-echo -e "${CYAN}        By: EGDarko${RESET}\n"
+echo -e "${CYAN}        By: Mazen Medhat${RESET}\n"
 
 # URL instructions
 echo -e "${YELLOW}Enter URL with FUZZ in the place you want to inject payload:${RESET}"
